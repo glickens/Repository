@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Contact Us</title>
+  <meta name="description" content="HTML5 Forms">
+  <meta name="author" content="Terry Lynn">
+  <link rel="shortcut icon" type="image/png" href="image/favicon-16x16.png">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <main>
+    <nav>
+      <h2>Menu</h2>
+      <a href="index.html">Home</a> | <a href="#">About</a> | <a href="contact-us.html">Contact</a> | <a
+        href="blog.html">Blog</a>
+    </nav>
+    <section>
+      <h2>Contact Information</h2>
+      <p>
+        Enter your contact information below.
+      </p>
+      <fieldset>
+        <h3>Personal Information</h3>
+        <form id="myMailerForm" method="get" action="mailto:e3691883@student.dcccd.edu">
+          <p>
+            <label title="Enter first name.">First Name <input type="text" name="First Name"
+                placeholder="First Name"></label>
+          </p>
+          <p>
+            <label title="Enter last name.">Last Name <input type="text" name="Last Name"
+                placeholder="Last Name"></label>
+          </p>
+          <label for="phone">Phone number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            autofocus>
+          <p>
+            <label title="Enter your email address.">E-Mail <input type="text" name="Email" placeholder="Email"></label>
+          </p>
+          <p>
+            <label title="Select College Location.">College</label>
+            <select name="collegeID">
+              <option value="">&larr;&nbsp;Select College&nbsp;&rarr;</option>
+              <option value="1">North Lake Campus</option>
+              <option value="2">Mountain View Campus</option>
+              <option value="3">Brookhaven Campus</option>
+              <option value="4">Eastfield</option>
+              <option value="5">Richland</option>
+              <option value="5">Cedar Valley</option>
+              <option value="5">El centro</option>
+            </select>
+          </p>
+          <h1>Department</h1>
+          <p>
+            <label title="Select department"><input type="checkbox" name="department">Health Science</label>
+            <label title="Select department"><input type="checkbox" name="department">Business</label>
+            <label title="Select department"><input type="checkbox" name="department">Technology</label>
+            <label title="Select department"><input type="checkbox" name="department">Math</label><br>
+            <label title="Select department"><input type="checkbox" name="department">Science</label>
+            <label title="Select department"><input type="checkbox" name="department">Engineering</label>
+            <label title="Select department"><input type="checkbox" name="department">Industrial Technology</label>
+            <label title="Select department"><input type="checkbox" name="department">Health Science</label>
+          </p>
+          <h1>Education Level</h1>
+          <p>
+            <label title="Education">High School Diploma<input type="radio" name="High School Diploma"></label>
+            <label title="Education">Associates<input type="radio" name="Associates Degree"></label>
+            <label title="Education">Bachelors<input type="radio" name="Bachelors Degree"></label>
+            <label title="Education">Masters<input type="radio" name="Masters Degree"></label>
+            <label title="Education">Doctoral<input type="radio" name="Doctors Degree"></label>
+
+          </p>
+          <h3>Your Message</h3>
+          <p>
+            Provide a detailed message with any questions or concerns.
+          </p>
+          <p>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message"></textarea>
+          </p>
+          <input type="submit" name="submit" value="Send Mail">
+          <input type="reset" value="Reset Form Data">
+        </form>
+      </fieldset>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Webmaster: Terry Lynn Copyright &copy; 2023</p>
+  </footer>
+
+</body>
+
+</html>
